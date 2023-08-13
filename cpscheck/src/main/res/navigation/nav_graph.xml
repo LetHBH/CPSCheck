@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph.xml"
+            app:startDestination="@id/mainActivity3">
+
+
+    <activity android:id="@+id/solo3" android:name="com.example.cpscheck.soloActivity" android:label="activity_solo"
+              tools:layout="@layout/activity_solo"/>
+    <navigation android:id="@+id/navigation8" app:startDestination="@id/mainActivity3">
+        <activity android:id="@+id/mainActivity3" android:name="com.example.cpscheck.MainActivity"
+                  android:label="activity_main" tools:layout="@layout/activity_main"/>
+        <action android:id="@+id/action_global_solo3" app:destination="@id/solo3"/>
+    </navigation>
+</navigation>
